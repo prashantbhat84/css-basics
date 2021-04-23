@@ -1,4 +1,5 @@
 const backdrop = document.querySelector('.backdrop');
+const sidebar = document.querySelector('.mobile-nav');
 // console.dir(backdrop)
 
 let selectPlanButtons = document.querySelectorAll('.plan .button');
@@ -16,4 +17,13 @@ for (let i = 0; selectPlanButtons.length; i++) {
 function hidemodal() {
     modal.style.display = 'none';
     backdrop.style.display = 'none';
+}
+function openSideBar() {
+    if (sidebar.style.display === "none") {
+        sidebar.style.display = "block";
+
+    } else {
+        sidebar.style.display = "none";
+    }
+
 }
