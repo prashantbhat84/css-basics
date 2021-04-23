@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  /* visibility: hidden; */
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  background: black;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__list li {
+  display: inline-block;
+}
+.footer__list li a {
+  margin: 0 1rem;
+  text-decoration: none;
+
+  color: white;
+  font-weight: bold;
+}
+.footer__list li a:hover,
+.footer__list li a:active {
+  background: black;
+  color: #ccc;
+  font-weight: bold;
+}
+.main-header {
+  background-color: #2ddf5c;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(99% - 78px);
+  vertical-align: middle;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  padding: 0.2rem 0;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  cursor: pointer;
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.main__brand {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: inline-block;
+  /* width: 20px; */
+  height: 22px;
+}
+.main__brand img {
+  height: 100%;
+  /* width: 100%; */
+}
+.main-nav__item__cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+.main-nav__item__cta a:hover,
+.main-nav__item__cta a:active {
+  color: red;
+  background-color: white;
+  border: none;
+}
+.button {
+  background-color: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1px solid #0e4f1f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  /* width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
+}
+.button:hover,
+.button:active {
+  background-color: white;
+  color: #0e4f1f;
+}
