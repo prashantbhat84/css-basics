@@ -1,6 +1,5 @@
 #product-overview {
-  background: url('./images/freedom.jpg') center top 30% / cover no-repeat
-    border-box;
+  background: url('./images/freedom.jpg') center / cover no-repeat border-box;
   /* background-image: url('./images/freedom.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,6 +30,18 @@
   bottom: 5%;
   left: 3%;
   margin: 0;
+  font-size: 1.6rem;
+}
+@media (min-width: 40rem) {
+  #product-overview h1 {
+    font-size: 3rem;
+    color: blue;
+    z-index: 0;
+  }
+  #product-overview {
+    height: 80vh;
+    background-position: 50% 25%;
+  }
 }
 
 .section-title {
@@ -42,15 +53,32 @@
   background-color: #d5ffdc;
   text-align: center;
   padding: 1rem;
-  margin: 0.5rem 0;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  margin: 0.5rem auto;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: center;
+    min-width: 13rem;
+    max-width: 20rem;
+  }
+  .plan__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .plan__list li {
+    margin: 0.5rem 0;
+  }
+  .plan__highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 .plan__highlighted {
   background-color: #19b84c;
   color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .plan__annotation {
   background: white;
@@ -72,18 +100,18 @@
   color: #0e4f1f;
 }
 .plan__lists {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  /* margin: auto; */
   text-align: center;
 }
-.plan__list {
+/* .plan__list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-.plan__list li {
+} */
+/* .plan__list li {
   margin: 0.5rem 0;
-}
+} */
 .button {
   background-color: #0e4f1f;
   color: white;
@@ -109,6 +137,7 @@
 } */
 .key-features {
   background: #ff1b68;
+  padding-bottom: 10px;
 }
 .key-features h1 {
   color: white;
@@ -119,8 +148,22 @@
   list-style: none;
 }
 .key-features__item {
-  display: inline-block;
   margin: 0 90px;
+}
+@media (min-width: 40rem) {
+  .key-features__item {
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+    max-width: 20rem;
+  }
+  .text {
+    vertical-align: middle;
+    margin: auto;
+  }
+  .key-features__list {
+    text-align: center;
+  }
 }
 .key-features__item div {
   margin: 0 auto;
@@ -132,8 +175,10 @@
   padding: 1.3rem;
 }
 .key-features__item p {
+  display: block;
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 .modal {
   position: fixed;

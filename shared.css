@@ -26,7 +26,13 @@ body {
   list-style: none;
 }
 .footer__list li {
-  display: inline-block;
+  display: block;
+  padding-bottom: 10px;
+}
+@media (min-width: 40rem) {
+  .footer__list li {
+    display: inline-block;
+  }
 }
 .footer__list li a {
   margin: 0 1rem;
@@ -118,6 +124,14 @@ body {
   background: black;
   display: block;
   margin: 0.6rem 0;
+}
+@media (min-width: 40rem) {
+  .toggle-button__bar {
+    display: none;
+  }
+  /* .main__brand img {
+    text-align: left;
+  } */
 }
 
 .main-nav__item__cta a,
