@@ -126,12 +126,9 @@ body {
   margin: 0.6rem 0;
 }
 @media (min-width: 40rem) {
-  .toggle-button__bar {
+  .toggle-button {
     display: none;
   }
-  /* .main__brand img {
-    text-align: left;
-  } */
 }
 
 .main-nav__item__cta a,
